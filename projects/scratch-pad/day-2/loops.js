@@ -18,7 +18,9 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
+  for( var i = 0; i < array.length; i++){
+    console.log(array[i]);
+  }
   
   
   
@@ -31,7 +33,9 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
+  for(var i = array.length - 1; i >= 0; i--){
+    console.log(array[i]);  
+  }
   
   
   
@@ -44,7 +48,9 @@ function printArrayValuesInReverse(array) {
  */
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+  for(var keys in object){
+    console.log(object[keys]);
+  }
   
   
   
@@ -57,7 +63,9 @@ function printObjectValues(object) {
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+  for( var keys in object){
+    console.log(keys);
+  }
   
   
   
@@ -69,8 +77,13 @@ function printObjectKeys(object) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+  //following line works, but made for-in loop for practice
+  //return Object.keys(object);
+  var newArray = [];
+  for(var key in object){
+    newArray.push(object[key]);
+  }
+  return newArray;
   
   
   // YOUR CODE ABOVE HERE //
@@ -81,7 +94,13 @@ function getObjectKeys(object) {
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  
+  //the following line works, but made a for-in loop for practice:
+  //return(Object.keys(object).length);
+  var counter = 0;
+  for( var key in object){
+    counter++;
+  }
+  return counter;
   
   
   
@@ -94,7 +113,14 @@ function getObjectLength(object) {
  */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
-  
+  //can I use my other functions in these functions?
+  var newArray = [];
+  for(var key in object){
+    newArray.push(object[key]);
+  }
+  for(var i = newArray.length -1; i >= 0; i--){
+    console.log(object[newArray[i]]);
+  }
   
   
   

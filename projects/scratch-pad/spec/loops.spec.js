@@ -33,14 +33,22 @@ describe("#loops", function () {
             expect(console.log.thirdCall.calledWith('three')).to.be.true;
         });
     });
-    describe("getObjectLength", function () {
-        it('should return the number of key/value pairs in the Object', function() {
-            expect(getObjectLength(object)).to.equal(3);
+    describe("printObjectKeys", function () {
+        it('should return an Array containing the Object keys', function() {
+            printObjectKeys(object);
+            expect(console.log.firstCall.calledWith('one')).to.be.true;
+            expect(console.log.secondCall.calledWith('two')).to.be.true;
+            expect(console.log.thirdCall.calledWith('three')).to.be.true;
         });
     });
     describe("getObjectKeys", function () {
         it('should return an Array containing the Object keys', function() {
             expect(getObjectKeys(object)).to.eql(['one', 'two', 'three']);
+        });
+    });
+    describe("getObjectLength", function () {
+        it('should return the number of key/value pairs in the Object', function() {
+            expect(getObjectLength(object)).to.equal(3);
         });
     });
     describe("printObjectValuesInReverse", function () {
