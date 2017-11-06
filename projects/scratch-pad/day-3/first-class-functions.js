@@ -52,7 +52,7 @@ function createLessThanFilter(base) {
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     return function(string){
-        return(startsWith === string[0]);
+        return(startsWith.toLowerCase() === string[0].toLowerCase());
     }
     
     
