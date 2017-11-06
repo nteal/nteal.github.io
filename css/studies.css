@@ -1,5 +1,5 @@
 body {
-    background: rgb(125, 198, 205);
+    background: rgb(0, 199, 200);
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -19,7 +19,7 @@ header {
 /* Main navigation menu */
 
 nav {
-    background: rgb(239, 80, 41);
+    background: rgb(34, 139, 34);
     margin: 0 auto;
     display: flex;
     padding: 10px;
