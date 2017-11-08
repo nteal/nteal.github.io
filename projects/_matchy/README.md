@@ -149,20 +149,3 @@ This is called **data validation** and it's extremely important in web developme
  
 ## Step 5 - Break
 **Step back and think about how far you've come!!** We are doing really hard stuff and if you've gotten here, you get it! This is awesome! It means you are well on your way to becoming a **pro web developer**. SWEET!
-
-# Part 3
-**Test and submit your work**
-
-Now you're done! Time to submit your great work to Greenlight to get that sweet, sweet green light.
-
-## Grade and submit
- 1. [ ] Open up a new `bash` terminal
- 2. [ ] Run the command `os test` in the bash terminal
-   - Select your class
-   - Select your Matchy
- 3. [ ] Make sure that you are passing all tests, or fix any failing tests
- 4. [ ] When all your tests pass, run the command `os submit`
-   - Select your class
-   - Select your Matchy
- 5. [ ] Check Greenlight to ensure your grade updated correctly
- 6. [ ] You're done! 
